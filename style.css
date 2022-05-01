@@ -125,7 +125,7 @@ text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
 
 /* The Modal (background) */
 .modal {
-    display: block; /* Hidden by default */
+    display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     padding-top: 100px; /* Location of the box */
