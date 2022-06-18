@@ -18,7 +18,7 @@
         </span>
         <h5>Back</h5>
         <span class="arrow">
-            <img src="arrow-right.png">
+            <img src="arrow-right .png">
     </span>
     </div>
     <div class="search">
@@ -30,20 +30,85 @@
         <div class="rect"></div>
     </div>
     <div class="window-content">
-        <div id="myBtn" class="folder">
+        <div class="window-content-items">
+        <div id="pastText" class="folder">
             <a href="about.html" target="_self">
             <img src="notes.jpg">
             <h5>about.txt</h5>
         </a>
         </div>
-        <div id="myBtn" class="folder">
+        <div id="pastImg" class="folder">
             <a href="image.html" target="_self">
 
             <img src="sky-bg.jpg">
             <h5>sky-bg.jpg</h5>
         </div>
-    
     </div>
+    </div>
+
+
+
+    <!-- The galleryModal -->
+<div id="galleryModal" class="modal">
+
+    <!-- Modal content -->
+ <div class="modal-content">
+       <!-- window-bar -->
+   <div class="window-bar">
+       <div class="file-name">
+           <img src="Windows_XP_folder 1.png">
+           <h4>past</h4>
+       </div>
+       <div class="window-actions">
+       <span class="size">
+         <img src="-.svg">
+ </span>
+ <span class="size">
+     <img src="maximize.svg">
+</span>
+ <span class="close">
+     <img src="x.svg">
+</span>
+</div>
+ </div>
+ <!-- window-content -->
+
+<iframe class="window-frame" src="image.html">
+
+</iframe>
+</div>
+
+</div>
     
 </body>
+
+
+<script>
+    ////////////////////////////////////
+ // Get the gallerymodal
+ var galleryModal = document.getElementById("galleryModal");
+
+// Get the button that opens the modal
+var galleryBtn = document.getElementById("pastImg");
+
+// Get the <span> element that closes the modal
+var gallerySpan = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+    galleryModal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    galleryModal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    galleryModal.style.display = "none";
+  }
+}
+</script>
 </html>
