@@ -33,6 +33,15 @@ main{
 width: 100%;
 }
 
+.logo{
+  width:45%;
+  border:1px solid;
+}
+
+.users{
+  width:45%;
+}
+
 .home-items{
   display: flex;
 flex-direction: row;
