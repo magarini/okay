@@ -10,7 +10,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Tahoma';
-
+    font-family: 'Microsoft Sans Serif', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: space-between;
@@ -279,8 +279,10 @@ h5 {
         height:32px;
     }
 
-    /* nav{
-        margin:0 24px;
-    } */
+    nav{
+        /* margin:0 24px; */
+        justify-content: center;
+    }
+
 
 }

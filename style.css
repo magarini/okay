@@ -157,7 +157,7 @@ text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
   
   /* Modal Content */
   .modal-content {
-    background: #0202FF;
+    /* background: #0202FF; */
     margin: auto;
     width: 60%;
     height:70%;
@@ -347,6 +347,8 @@ background: #FFFFFF;
 align-self: stretch;
 height:100%;
 flex-wrap: wrap;
+border:3px solid #0202FF;
+border-top:none;
 }
 
 
