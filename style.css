@@ -119,11 +119,18 @@ margin:16px;
 
 }
 
+.folder a{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .folder img{
     height:64px;
     flex: none;
 order: 0;
 flex-grow: 0;
+margin:8px;
 }
 
 .folder h6{
