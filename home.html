@@ -1,113 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Okay - initiative space</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Windows XP Theme (include only one theme at a time) -->
+    <link rel="stylesheet" href="https://unpkg.com/xp.css" />
 </head>
+
 <body>
     <main>
         <div class="home-items">
-        <div id="past" class="folder">
-            <img src="Windows_XP_folder 1.png">
-            <h6>past</h6>
+            <div id="past" class="folder">
+                <img src="Windows_XP_folder 1.png">
+                <h6>past</h6>
+            </div>
+            <div class="folder">
+                <img src="Windows_XP_folder 1.png">
+                <h6>current</h6>
+            </div>
+            <div class="folder">
+                <img src="Windows_XP_folder 1.png">
+                <h6>upcoming</h6>
+            </div>
+            <div class="folder">
+                <img src="Windows_XP_folder 1.png">
+                <h6>OK Drops</h6>
+            </div>
+            <div class="folder">
+                <img src="Windows_XP_folder 1.png">
+                <h6>OK Drops</h6>
+            </div>
         </div>
-        <div class="folder">
-            <img src="Windows_XP_folder 1.png">
-            <h6>current</h6>
-        </div>
-        <div class="folder">
-            <img src="Windows_XP_folder 1.png">
-            <h6>upcoming</h6>
-        </div>
-        <div class="folder">
-            <img src="Windows_XP_folder 1.png">
-            <h6>OK Drops</h6>
-        </div>
-        <div class="folder">
-            <img src="Windows_XP_folder 1.png">
-            <h6>OK Drops</h6>
-        </div>
-    </div>
     </main>
     <nav>
         <button class="start-btn">Okay-initiative space</button>
         <button class="time-btn">4:49 PM</button>
     </nav>
 
-<!-- Trigger/Open The Modal -->
-<!-- <button id="myBtn">Open Modal</button> -->
+    <!-- Trigger/Open The Modal -->
+    <!-- <button id="myBtn">Open Modal</button> -->
 
-<!-- The PastModal -->
-<div id="pastModal" class="modal">
+    <!-- The PastModal -->
+    <div id="pastModal" class="modal">
 
-  <!-- Modal past content -->
-  <div class="modal-content">
-    <!-- window-bar -->
-      <div class="window-bar">
-          <div class="file-name">
-              <img src="Windows_XP_folder 1.png">
-              <h4>past</h4>
-          </div>
-          <div class="window-actions">
-          <span class="size">
-            <img src="-.svg">
-    </span>
-    <span class="size">
-        <img src="maximize.svg">
-</span>
-    <span class="close">
-        <img src="x.svg">
-</span>
-</div>
+        <!-- Modal past content -->
+        <div class="modal-content">
+            <!-- window-bar -->
+            <div class="window-bar">
+                <div class="file-name">
+                    <img src="Windows_XP_folder 1.png">
+                    <h4>past</h4>
+                </div>
+                <div class="window-actions">
+                    <span class="size">
+                        <img src="-.svg">
+                    </span>
+                    <span class="size">
+                        <img src="maximize.svg">
+                    </span>
+                    <span class="close">
+                        <img src="x.svg">
+                    </span>
+                </div>
+            </div>
+            <!-- window-content -->
+
+            <iframe class="window-frame" src="past\past-window-content.html">
+            </iframe>
+        </div>
+
     </div>
-    <!-- window-content -->
-
-<iframe class="window-frame" src="past\past-window-content.html">
-   </iframe>
-  </div>
-
-</div>
 
 
 
 
 
     <script>
-       // Get the pastmodal
-var pastModal = document.getElementById("pastModal");
+        // Get the pastmodal
+        var pastModal = document.getElementById("pastModal");
 
-// Get the button that opens the modal
-var pastBtn = document.getElementById("past");
+        // Get the button that opens the modal
+        var pastBtn = document.getElementById("past");
 
-// Get the <span> element that closes the modal
-var pastSpan = document.getElementsByClassName("close")[0];
+        // Get the <span> element that closes the modal
+        var pastSpan = document.getElementsByClassName("close")[0];
 
-// When the user clicks the button, open the modal 
-pastBtn.onclick = function() {
-  pastModal.style.display = "block";
-}
+        // When the user clicks the button, open the modal 
+        pastBtn.onclick = function () {
+            pastModal.style.display = "block";
+        }
 
-// When the user clicks on <span> (x), close the modal
-pastSpan.onclick = function() {
-  pastModal.style.display = "none";
-}
+        // When the user clicks on <span> (x), close the modal
+        pastSpan.onclick = function () {
+            pastModal.style.display = "none";
+        }
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == pastModal) {
-    pastModal.style.display = "none";
-  }
-}
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == pastModal) {
+                pastModal.style.display = "none";
+            }
+        }
 
+        // clock
+        var d = new Date();
+        let hour = d.getHours();
+        let min = d.getMinutes();
+        if (min < 10) {
+            min = "0" + min;
+        }
+        var ampm = "AM";
+        if (hour > 12) {
+            hour -= 12;
+            ampm = "PM";
+        }
+        document.querySelector('.time-btn').innerHTML = hour + ':' + min + " "+ampm;
 
-
-
-
-</script>
+        
+    </script>
 
 
 </body>
+
 </html>
