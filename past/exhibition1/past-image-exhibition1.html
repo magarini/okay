@@ -68,6 +68,7 @@
 </body>
 <script>
     let slideIndex = 1;
+    let fileName;
     showSlides(slideIndex);
 
     // Next/previous controls
@@ -90,6 +91,10 @@
         }
 
         slides[slideIndex - 1].style.display = "block";
+        fileName=slides[slideIndex - 1].querySelector('.img-view').src.split("/").pop().split(".")[0]
+        document.querySelector('.file-name h4')
+        let windowHeader=document.querySelector('.file-name');
+        console.log('photoName',windowHeader.querySelector('h4'))
     } 
 </script>
 
