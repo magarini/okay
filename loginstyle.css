@@ -277,11 +277,17 @@ h5 {
 
     nav img{
         height:32px;
+        margin:16px 8px;
     }
 
     nav{
         /* margin:0 24px; */
         justify-content: center;
+    }
+
+    nav h5{
+        margin:8px;
+        font-size: 16px;
     }
 
 
