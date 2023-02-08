@@ -312,8 +312,22 @@ span {
   height: 25%;
   border: 0.5px solid #E0E0E0;
   align-self: stretch;
+}
 
+.addressDiv{
+  display:flex;
+  align-items: center;
+}
 
+.addressDiv label{
+  opacity:0.5;
+}
+
+.addressDiv input{
+  height:100%;
+  box-sizing: border-box;
+  outline:none;
+  border:none;
 }
 
 .back {

@@ -55,7 +55,9 @@
 
 
             <div class="mySlides img-view">
-                <img class='img-view' src="door.jpg">
+                <a href="#doorImg">
+                <img class='img-view' id="doorImg" src="door.jpg">
+            </a>
             </div>
 
 
@@ -69,6 +71,8 @@
     <!-- </div> -->
 </body>
 <script>
+    console.log(window.location.pathname)
+    
     let slideIndex = 1;
     showSlides(slideIndex);
 
@@ -92,6 +96,11 @@
         }
 
         slides[slideIndex - 1].style.display = "block";
+        fileName=slides[slideIndex - 1].querySelector('.img-view').src.split("/").pop().split(".")[0]
+        document.querySelector('.file-name h4')
+        let activeWindow=parent.document.getElementById('pastModal');
+        let windowHeader=activeWindow.querySelector('.file-name');
+        windowHeader.querySelector('h4').innerHTML=fileName
     } 
 </script>
 
