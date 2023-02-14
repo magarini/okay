@@ -429,6 +429,25 @@ span {
   background-color: #D2E5FB;
 }
 
+.window-bar.bottom a{
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.window-bar.bottom h5 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  /* or 50px */
+  color: #FFFFFF;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 16px;
+}
+
 h5 {
   font-weight: normal;
   margin: 0px 8px;
