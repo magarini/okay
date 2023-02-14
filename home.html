@@ -37,11 +37,11 @@
         </div>
     </main>
     <nav>
-        <button class="start-btn">Okay-initiative space</button>
+        <button class="start-btn" id="startBtn">Okay-initiative space</button>
         <button class="time-btn">4:49 PM</button>
     </nav>
 
- 
+
 
     <!-- The PastModal -->
     <div id="pastModal" class="modal">
@@ -77,8 +77,46 @@
 
 
 
+    <!-- The startMenuModal -->
+    <div id="startMenuModal" class="modal startMenu">
+
+        <!-- Modal past content -->
+        <div class="modal-content">
+
+            <div class="window-bar">
+                <div class="file-name">
+                    <h4>about okay</h4>
+                </div>
+
+            </div>
+            <!-- window-content -->
+
+            <div class="window-frame">
+                <div class="startWhiteSide">
+                    Info:
+                </div>
+                <div class="startBlueSide">
+                    Address: <br>
+                    Kefallinias 7, Athens, Greece 11361
+                </div>
+
+            </div>
+            <div class="window-bar bottom">
+                <img src="off.svg">
+                    <h5>Turn off computer</h5>
+          
+            </div>
+        </div>
+
+    </div>
+
+
+
 
     <script>
+
+        // PAST-MODAL
+
         // Get the pastmodal
         var pastModal = document.getElementById("pastModal");
 
@@ -105,6 +143,23 @@
             }
         }
 
+
+        // STARTMENU-MODAL
+
+        var startMenuModal = document.getElementById("startMenuModal");
+        var startBtn = document.getElementById("startBtn");
+        startBtn.onclick = function () {
+            startMenuModal.style.display = "block";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == startMenuModal) {
+                startMenuModal.style.display = "none";
+            }
+        }
+
+
         // clock
         var d = new Date();
         let hour = d.getHours();
@@ -117,9 +172,9 @@
             hour -= 12;
             ampm = "PM";
         }
-        document.querySelector('.time-btn').innerHTML = hour + ':' + min + " "+ampm;
+        document.querySelector('.time-btn').innerHTML = hour + ':' + min + " " + ampm;
 
-        
+
     </script>
 
 

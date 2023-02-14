@@ -55,7 +55,7 @@ nav {
   padding: 0%;
   background: #0268DA;
   box-shadow: inset 0px -4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(255, 255, 255, 0.25);
-
+  z-index:10;
 
 }
 
@@ -214,11 +214,12 @@ button {
   align-items: center;
   padding: 8px;
   align-self: stretch;
-
   background: #0202FF;
   box-shadow: inset -4px 4px 4px rgba(59, 162, 221, 0.58), inset 4px 4px 4px rgba(255, 255, 255, 0.25);
-
 }
+
+
+
 
 .file-name {
   display: flex;
@@ -399,6 +400,34 @@ span {
   border-top: none;
 }
 
+#startMenuModal .modal-content{
+  position:absolute;
+  left:-4px;
+  bottom:140px;
+  height:60%;
+}
+
+#startMenuModal .window-bar{
+  padding:16px;
+}
+
+#startMenuModal .window-frame{
+  display:flex;
+  border-bottom:none;
+}
+
+.startWhiteSide, .startBlueSide{
+  display:flex;
+  flex-grow: 1;
+  height:100%;
+  width:50%;
+  padding:32px;
+  box-sizing:border-box;
+}
+
+.startBlueSide{
+  background-color: #D2E5FB;
+}
 
 h5 {
   font-weight: normal;
