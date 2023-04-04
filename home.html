@@ -1,120 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Okay - initiative space</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Windows XP Theme (include only one theme at a time) -->
-    <link rel="stylesheet" href="https://unpkg.com/xp.css" />
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Okay - initiative space</title>
+        <link rel="stylesheet" href="style.css">
+        <!-- Windows XP Theme (include only one theme at a time) -->
+        <link rel="stylesheet" href="https://unpkg.com/xp.css" />
+    </head>
 
-<body>
-    <main>
-        <div class="home-items">
-            <div id="past" class="folder">
-                <img src="Windows_XP_folder 1.png">
-                <h6>past</h6>
-            </div>
-            <div class="folder">
-                <img src="Windows_XP_folder 1.png">
-                <h6>current</h6>
-            </div>
-            <div class="folder">
-                <img src="Windows_XP_folder 1.png">
-                <h6>upcoming</h6>
-            </div>
-            <div class="folder">
-                <img src="Windows_XP_folder 1.png">
-                <h6>artists</h6>
-            </div>
-            <div class="folder">
-                <img src="Windows_XP_folder 1.png">
-                <h6>graphic designers</h6>
-            </div>
-        </div>
-    </main>
-    <nav>
-        <button class="start-btn" id="startBtn">Okay-initiative space</button>
-        <button class="time-btn">4:49 PM</button>
-    </nav>
-
-
-
-    <!-- The PastModal -->
-    <div id="pastModal" class="modal">
-
-        <!-- Modal past content -->
-        <div class="modal-content">
-            <!-- window-bar -->
-            <div class="window-bar">
-                <div class="file-name">
+    <body>
+        <main>
+            <div class="home-items">
+                <div id="past" class="folder">
                     <img src="Windows_XP_folder 1.png">
-                    <h4>past</h4>
+                    <h6>past</h6>
                 </div>
-                <div class="window-actions">
-                    <span class="size">
-                        <img src="-.svg">
-                    </span>
-                    <span class="size">
-                        <img src="maximize.svg">
-                    </span>
-                    <span class="close">
-                        <img src="x.svg">
-                    </span>
+                <div class="folder">
+                    <img src="Windows_XP_folder 1.png">
+                    <h6>current</h6>
+                </div>
+                <div class="folder">
+                    <img src="Windows_XP_folder 1.png">
+                    <h6>upcoming</h6>
+                </div>
+                <div class="folder">
+                    <img src="Windows_XP_folder 1.png">
+                    <h6>artists</h6>
+                </div>
+                <div class="folder">
+                    <img src="Windows_XP_folder 1.png">
+                    <h6>graphic designers</h6>
                 </div>
             </div>
-            <!-- window-content -->
+        </main>
+        <nav>
+            <button class="start-btn" id="startBtn">Okay-initiative space</button>
+            <button class="time-btn">4:49 PM</button>
+        </nav>
 
-            <iframe class="window-frame" src="past\past-window-content.html">
-            </iframe>
+
+
+        <!-- The PastModal -->
+        <div id="pastModal" class="modal">
+
+            <!-- Modal past content -->
+            <div class="modal-content">
+                <!-- window-bar -->
+                <div class="window-bar">
+                    <div class="file-name">
+                        <img src="Windows_XP_folder 1.png">
+                        <h4>past</h4>
+                    </div>
+                    <div class="window-actions">
+                        <span class="size">
+                            <img src="icons/-.svg">
+                        </span>
+                        <span class="size">
+                            <img src="maximize.svg">
+                        </span>
+                        <span class="close">
+                            <img src="x.svg">
+                        </span>
+                    </div>
+                </div>
+                <!-- window-content -->
+
+                <iframe class="window-frame"
+                    src="past\past-window-content.html">
+                </iframe>
+            </div>
+
         </div>
 
-    </div>
 
 
 
+        <!-- The startMenuModal -->
+        <div id="startMenuModal" class="modal startMenu">
 
-    <!-- The startMenuModal -->
-    <div id="startMenuModal" class="modal startMenu">
+            <!-- Modal past content -->
+            <div class="modal-content">
 
-        <!-- Modal past content -->
-        <div class="modal-content">
+                <div class="window-bar">
+                    <div class="file-name">
+                        <h4>about okay</h4>
+                    </div>
 
-            <div class="window-bar">
-                <div class="file-name">
-                    <h4>about okay</h4>
                 </div>
+                <!-- window-content -->
 
-            </div>
-            <!-- window-content -->
+                <div class="window-frame">
+                    <div class="startWhiteSide">
+                        Info:
+                    </div>
+                    <div class="startBlueSide">
+                        Address: <br>
+                        Kefallinias 7, Athens, Greece 11361
+                    </div>
 
-            <div class="window-frame">
-                <div class="startWhiteSide">
-                    Info:
                 </div>
-                <div class="startBlueSide">
-                    Address: <br>
-                    Kefallinias 7, Athens, Greece 11361
+                <div class="window-bar bottom">
+                    <a href="login.html">
+                        <img src="off.svg">
+                        <h5>Turn off computer</h5>
+                    </a>
                 </div>
+            </div>
 
-            </div>
-            <div class="window-bar bottom">
-                <a href="login.html">
-                <img src="off.svg">
-                    <h5>Turn off computer</h5>
-                </a>
-            </div>
         </div>
 
-    </div>
 
 
 
-
-    <script>
+        <script>
 
         // PAST-MODAL
 
@@ -176,9 +177,19 @@
         document.querySelector('.time-btn').innerHTML = hour + ':' + min + " " + ampm;
 
 
+        // getfolderNames
+        document.querySelectorAll(".folder").forEach(item=>{
+        item.addEventListener('click', event => {
+        let filename=item.querySelector("h6").innerHTML;
+        let activeWindow=parent.document.getElementById('pastModal');
+        let windowHeader=activeWindow.querySelector('.file-name');
+        windowHeader.querySelector('h4').innerHTML=filename
+        console.log('hh',filename)
+
+  })
+    })
+
     </script>
-
-
-</body>
+    </body>
 
 </html>

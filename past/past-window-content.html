@@ -1,111 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Okay - initiative space</title>
-    <link rel="stylesheet" href="../style.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Okay - initiative space</title>
+        <link rel="stylesheet" href="../style.css">
 
-</head>
+    </head>
 
-<body>
-    <div class="window-header">
-        <div class="rect"></div>
-        <div class="window-nav">
-            <div class="back">
-                <span class="arrow">
-                    <img src="arrow-left.svg">
-                </span>
-                <h5>Back</h5>
-                <span class="arrow">
-                    <img src="arrow-right.svg">
-                </span>
-            </div>
-            <div class="search">
-                <img src="../search.png">
-                <h5>Search</h5>
-
-            </div>
-        </div>
-        <div class="rect addressDiv">
-            <!-- <h5>Address</h5> -->
-            <label for="address"><h5>Address:</h5></label>
-            <input type="text" id="address" name="address" placeholder="you are here">
-
-        </div>
-    </div>
-    <div class="window-content">
-        <div class="window-content-items">
-            <div id="pastText" class="folder">
-                <a href="past-text.html" target="_self">
-                    <img src="notes.jpg">
-                    <h5>about.txt</h5>
-                </a>
-            </div>
-
-            <div id="pastImg" class="folder">
-                <a href="past-image.html" target="_self">
-                    <img src="sky-bg.jpg">
-                    <h5>sky-bg.jpg</h5>
-                </a>
-            </div>
-            <div id="pastImg" class="folder">
-                <a href="past-image.html" target="_self">
-                    <img src="door.jpg">
-                    <h5>door.jpg</h5>
-                </a>
-            </div>
-            <div id="pastImg" class="folder">
-                <a href="exhibition1/past-window-content-exhibition1.html" target="_self">
-                    <img src="Windows_XP_folder 1.png">
-                    <h5>exhibition1</h5>
-                </a>
-            </div>
-            
-
-        </div>
-    </div>
-
-
-
-    <!-- The galleryModal -->
-    <div id="galleryModal" class="modal">
-
-        <!-- Modal content -->
-        <div class="modal-content">
-            <!-- window-bar -->
-            <div class="window-bar">
-                <div class="file-name">
-                    <img src="Windows_XP_folder 1.png">
-                    <h4>past</h4>
-                </div>
-                <div class="window-actions">
-                    <span class="size">
-                        <img src="-.svg">
+    <body onload="folderName()">
+        <div class="window-header">
+            <div class="rect"></div>
+            <div class="window-nav">
+                <div class="back">
+                    <span class="arrow">
+                        <img src="icons/arrow-left.svg">
                     </span>
-                    <span class="size">
-                        <img src="maximize.svg">
-                    </span>
-                    <span class="close">
-                        <img src="x.svg">
+                    <h5>Back</h5>
+                    <span class="arrow">
+                        <img src="icons/arrow-right.svg">
                     </span>
                 </div>
+                <div class="search">
+                    <img src="../search.png">
+                    <h5>Search</h5>
+                </div>
             </div>
-            <!-- window-content -->
+            <div class="rect addressDiv">
+                <!-- <h5>Address</h5> -->
+                <label for="address"><h5>Address:</h5></label>
+                <input type="text" id="address" name="address"
+                    placeholder="C:\Desktop\past">
 
-            <iframe class="window-frame" src="past\past-image.html">
+            </div>
+        </div>
+        <div class="window-content">
+            <div class="window-content-items">
+                <div id="pastText" class="folder">
+                    <a href="past-text.html" target="_self">
+                        <img src="notes.jpg">
+                        <h5>about.txt</h5>
+                    </a>
+                </div>
 
-            </iframe>
+                <div id="pastImg" class="folder">
+                    <a href="past-image.html" target="_self">
+                        <img src="sky-bg.jpg">
+                        <h5>sky-bg.jpg</h5>
+                    </a>
+                </div>
+                <div id="pastImg" class="folder">
+                    <a href="past-image.html" target="_self">
+                        <img src="door.jpg">
+                        <h5>door.jpg</h5>
+                    </a>
+                </div>
+                <div id="pastImg" class="folder">
+                    <a href="exhibition1/past-window-content-exhibition1.html"
+                        target="_self">
+                        <img src="Windows_XP_folder 1.png">
+                        <h5>exhibition1</h5>
+                    </a>
+                </div>
+
+
+            </div>
         </div>
 
-    </div>
-
-</body>
 
 
-<script>
+        <!-- The galleryModal -->
+        <div id="galleryModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <!-- window-bar -->
+                <div class="window-bar">
+                    <div class="file-name">
+                        <img src="Windows_XP_folder 1.png">
+                        <h4>past</h4>
+                    </div>
+                    <div class="window-actions">
+                        <span class="size">
+                            <img src="icons/-.svg">
+                        </span>
+                        <span class="size">
+                            <img src="maximize.svg">
+                        </span>
+                        <span class="close">
+                            <img src="x.svg">
+                        </span>
+                    </div>
+                </div>
+                <!-- window-content -->
+
+                <iframe class="window-frame" src="past\past-image.html">
+                </iframe>
+            </div>
+
+        </div>
+
+ 
+
+
+    <script>
     ////////////////////////////////////
     // Get the gallerymodal
     var galleryModal = document.getElementById("galleryModal");
@@ -132,6 +132,22 @@
             galleryModal.style.display = "none";
         }
     }
-</script>
 
+    function folderName(){
+    let filename='past'
+    let activeWindow=parent.document.getElementById('pastModal');
+    let windowHeader=activeWindow.querySelector('.file-name');
+    windowHeader.querySelector('h4').innerHTML=filename
+      // getfolderNames
+      document.querySelectorAll(".folder").forEach(item=>{
+        item.addEventListener('click', event => {
+        filename=item.querySelector("h5").innerHTML
+        console.log('oo',item)
+        windowHeader.querySelector('h4').innerHTML=filename
+     })
+    })
+}
+    
+</script>
+</body>
 </html>
