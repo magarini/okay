@@ -115,79 +115,26 @@
 
 
 
+
+        <script src="general.js"></script>
+        <script src="past/pastModal.js"></script>
         <script>
-
-        // PAST-MODAL
-
-        // Get the pastmodal
-        var pastModal = document.getElementById("pastModal");
-
-        // Get the button that opens the modal
-        var pastBtn = document.getElementById("past");
-
-        // Get the <span> element that closes the modal
-        var pastSpan = document.getElementsByClassName("close")[0];
-
-        // When the user clicks the button, open the modal 
-        pastBtn.onclick = function () {
-            pastModal.style.display = "block";
-        }
-
-        // When the user clicks on <span> (x), close the modal
-        pastSpan.onclick = function () {
-            pastModal.style.display = "none";
-        }
-
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function (event) {
-            if (event.target == pastModal) {
-                pastModal.style.display = "none";
-            }
-        }
-
-
         // STARTMENU-MODAL
 
-        var startMenuModal = document.getElementById("startMenuModal");
-        var startBtn = document.getElementById("startBtn");
-        startBtn.onclick = function () {
-            startMenuModal.style.display = "block";
-        }
+var startMenuModal = document.getElementById("startMenuModal");
+var startBtn = document.getElementById("startBtn");
+startBtn.onclick = function () {
+    startMenuModal.style.display = "block";
+}
 
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function (event) {
-            if (event.target == startMenuModal) {
-                startMenuModal.style.display = "none";
-            }
-        }
-
-
-        // clock
-        var d = new Date();
-        let hour = d.getHours();
-        let min = d.getMinutes();
-        if (min < 10) {
-            min = "0" + min;
-        }
-        var ampm = "AM";
-        if (hour > 12) {
-            hour -= 12;
-            ampm = "PM";
-        }
-        document.querySelector('.time-btn').innerHTML = hour + ':' + min + " " + ampm;
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+    if (event.target == startMenuModal) {
+        startMenuModal.style.display = "none";
+    }
+}
 
 
-        // getfolderNames
-        document.querySelectorAll(".folder").forEach(item=>{
-        item.addEventListener('click', event => {
-        let filename=item.querySelector("h6").innerHTML;
-        let activeWindow=parent.document.getElementById('pastModal');
-        let windowHeader=activeWindow.querySelector('.file-name');
-        windowHeader.querySelector('h4').innerHTML=filename
-        console.log('hh',filename)
-
-  })
-    })
 
     </script>
     </body>
