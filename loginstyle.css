@@ -28,12 +28,8 @@ body {
     background: #014499;
     width: 100%;
     display: flex;
-    display: flex;
     flex-direction: row;
     align-items: flex-start;
-
-
-
 }
 
 nav {
@@ -151,10 +147,7 @@ h5 {
     font-size: 24px;
     line-height: 140%;
     /* or 50px */
-
-
     color: #FFFFFF;
-
     flex: none;
     order: 1;
     flex-grow: 0;
