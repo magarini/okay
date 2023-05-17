@@ -307,6 +307,7 @@ h5 {
     .logo img {
         width: 80%;
         margin: auto;
+        max-width:300px;
 
     }
 
