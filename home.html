@@ -1,184 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Okay - initiative space</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Windows XP Theme (include only one theme at a time) -->
-    <link rel="stylesheet" href="https://unpkg.com/xp.css" />
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Okay - initiative space</title>
+        <link rel="stylesheet" href="style.css">
+        <!-- Windows XP Theme (include only one theme at a time) -->
+        <link rel="stylesheet" href="https://unpkg.com/xp.css" />
+    </head>
 
-<body>
-    <main>
-        <div class="home-items">
-            <div id="past" class="folder">
-                <img src="Windows_XP_folder 1.png">
-                <h6>past</h6>
-            </div>
-            <div class="folder">
-                <img src="Windows_XP_folder 1.png">
-                <h6>current</h6>
-            </div>
-            <div class="folder">
-                <img src="Windows_XP_folder 1.png">
-                <h6>upcoming</h6>
-            </div>
-            <div class="folder">
-                <img src="Windows_XP_folder 1.png">
-                <h6>artists</h6>
-            </div>
-            <div class="folder">
-                <img src="Windows_XP_folder 1.png">
-                <h6>graphic designers</h6>
-            </div>
-        </div>
-    </main>
-    <nav>
-        <button class="start-btn" id="startBtn">Okay-initiative space</button>
-        <button class="time-btn">4:49 PM</button>
-    </nav>
-
-
-
-    <!-- The PastModal -->
-    <div id="pastModal" class="modal">
-
-        <!-- Modal past content -->
-        <div class="modal-content">
-            <!-- window-bar -->
-            <div class="window-bar">
-                <div class="file-name">
-                    <img src="Windows_XP_folder 1.png">
-                    <h4>past</h4>
+    <body>
+        <main>
+            <div class="home-items">
+                <div id="past" class="folder">
+                    <img src="icons/Windows_XP_folder 1.png">
+                    <h6>past</h6>
                 </div>
-                <div class="window-actions">
-                    <span class="size">
-                        <img src="-.svg">
-                    </span>
-                    <span class="size">
-                        <img src="maximize.svg">
-                    </span>
-                    <span class="close">
-                        <img src="x.svg">
-                    </span>
+                <div class="folder">
+                    <img src="icons/Windows_XP_folder 1.png">
+                    <h6>current</h6>
+                </div>
+                <div class="folder">
+                    <img src="icons/Windows_XP_folder 1.png">
+                    <h6>upcoming</h6>
+                </div>
+                <div class="folder">
+                    <img src="icons/Windows_XP_folder 1.png">
+                    <h6>artists</h6>
+                </div>
+                <div class="folder">
+                    <img src="icons/Windows_XP_folder 1.png">
+                    <h6>graphic designers</h6>
                 </div>
             </div>
-            <!-- window-content -->
-
-            <iframe class="window-frame" src="past\past-window-content.html">
-            </iframe>
-        </div>
-
-    </div>
+        </main>
+        <nav>
+            <button class="start-btn" id="startBtn">Okay-initiative space</button>
+            <button class="time-btn">4:49 PM</button>
+        </nav>
 
 
 
+        <!-- The PastModal -->
+        <div id="pastModal" class="modal">
 
-    <!-- The startMenuModal -->
-    <div id="startMenuModal" class="modal startMenu">
-
-        <!-- Modal past content -->
-        <div class="modal-content">
-
-            <div class="window-bar">
-                <div class="file-name">
-                    <h4>about okay</h4>
+            <!-- Modal past content -->
+            <div class="modal-content">
+                <!-- window-bar -->
+                <div class="window-bar">
+                    <div class="file-name">
+                        <img src="icons/Windows_XP_folder 1.png">
+                        <h4>past</h4>
+                    </div>
+                    <div class="window-actions">
+                        <span class="size">
+                            <img src="icons/-.svg">
+                        </span>
+                        <span class="size">
+                            <img src="icons/maximize.svg">
+                        </span>
+                        <span class="close">
+                            <img src="icons/x.svg">
+                        </span>
+                    </div>
                 </div>
+                <!-- window-content -->
 
+                <iframe class="window-frame"
+                    src="past\past-window-content.html">
+                </iframe>
             </div>
-            <!-- window-content -->
 
-            <div class="window-frame">
-                <div class="startWhiteSide">
-                    Info:
-                </div>
-                <div class="startBlueSide">
-                    Address: <br>
-                    Kefallinias 7, Athens, Greece 11361
-                </div>
-
-            </div>
-            <div class="window-bar bottom">
-                <a href="login.html">
-                <img src="off.svg">
-                    <h5>Turn off computer</h5>
-                </a>
-            </div>
         </div>
 
-    </div>
+
+
+
+        <!-- The startMenuModal -->
+        <div id="startMenuModal" class="modal startMenu">
+
+            <!-- Modal past content -->
+            <div class="modal-content">
+
+                <div class="window-bar">
+                    <div class="file-name">
+                        <h4>about okay</h4>
+                    </div>
+
+                </div>
+                <!-- window-content -->
+
+                <div class="window-frame">
+                    <div class="startWhiteSide">
+                        Info:
+                    </div>
+                    <div class="startBlueSide">
+                        Address: <br>
+                        Kefallinias 7, Athens, Greece 11361
+                    </div>
+
+                </div>
+                <div class="window-bar bottom">
+                    <a href="login.html">
+                        <img src="icons/off.svg">
+                        <h5>Turn off computer</h5>
+                    </a>
+                </div>
+            </div>
+
+        </div>
 
 
 
 
-    <script>
 
-        // PAST-MODAL
-
-        // Get the pastmodal
-        var pastModal = document.getElementById("pastModal");
-
-        // Get the button that opens the modal
-        var pastBtn = document.getElementById("past");
-
-        // Get the <span> element that closes the modal
-        var pastSpan = document.getElementsByClassName("close")[0];
-
-        // When the user clicks the button, open the modal 
-        pastBtn.onclick = function () {
-            pastModal.style.display = "block";
-        }
-
-        // When the user clicks on <span> (x), close the modal
-        pastSpan.onclick = function () {
-            pastModal.style.display = "none";
-        }
-
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function (event) {
-            if (event.target == pastModal) {
-                pastModal.style.display = "none";
-            }
-        }
-
-
+        <script src="general.js"></script>
+        <script src="past/pastModal.js"></script>
+        <script>
         // STARTMENU-MODAL
 
-        var startMenuModal = document.getElementById("startMenuModal");
-        var startBtn = document.getElementById("startBtn");
-        startBtn.onclick = function () {
-            startMenuModal.style.display = "block";
-        }
+var startMenuModal = document.getElementById("startMenuModal");
+var startBtn = document.getElementById("startBtn");
+startBtn.onclick = function () {
+    startMenuModal.style.display = "block";
+}
 
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function (event) {
-            if (event.target == startMenuModal) {
-                startMenuModal.style.display = "none";
-            }
-        }
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+    if (event.target == startMenuModal) {
+        startMenuModal.style.display = "none";
+    }
+}
 
-
-        // clock
-        var d = new Date();
-        let hour = d.getHours();
-        let min = d.getMinutes();
-        if (min < 10) {
-            min = "0" + min;
-        }
-        var ampm = "AM";
-        if (hour > 12) {
-            hour -= 12;
-            ampm = "PM";
-        }
-        document.querySelector('.time-btn').innerHTML = hour + ':' + min + " " + ampm;
 
 
     </script>
-
-
-</body>
+    </body>
 
 </html>

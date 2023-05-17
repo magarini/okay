@@ -1,54 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Okay - initiative space</title>
-    <link rel="stylesheet" href="loginstyle.css">
-    <!-- Windows XP Theme (include only one theme at a time) -->
-    <link rel="stylesheet" href="https://unpkg.com/xp.css" />
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Okay - initiative space</title>
+        <link rel="stylesheet" href="loginstyle.css">
+        <!-- Windows XP Theme (include only one theme at a time) -->
+        <link rel="stylesheet" href="https://unpkg.com/xp.css" />
+    </head>
 
-<body>
-    <div class="login-header">
-
-    </div>
-    <div class="divider-x"></div>
-
-    <main>
-
-        <div class="logo"><img src="OKAY_1-2 2.png"></div>
-
-        <div class="divider"><img src="Rectangle 1.svg"></div>
-        <div class="divider-x hidden"></div>
-
-
-        <div class="users">
-            <div class="user">
-                <div class="userframe">
-                    <a href="home.html"><img src="duck.png"></a>
-                </div>
-                <h5>OKAY space</h5>
-            </div>
-
-            <div class="user">
-                <div class="userframe">
-                    <a href="home.html"><img src="chess.jpg"></a>
-                </div>
-                <h5>guest</h5>
-            </div>
+    <body>
+        <div class="login-header">
 
         </div>
+        <div class="divider-x"></div>
 
-    </main>
-    <div class="divider-x"></div>
-    <div class="login-header">
-        <nav><img src="off.svg">
-            <h5>Turn off computer</h5>
-        </nav>
-    </div>
-</body>
+        <main>
+
+            <div class="logo"><img src="OKAY_1-2 2.png"></div>
+
+            <div class="divider"><img src="icons/Rectangle 1.svg"></div>
+            <div class="divider-x hidden"></div>
+
+
+            <div class="users">
+                <div class="user">
+                    <div class="userframe">
+                        <a href="home.html"><img src="duck.png"></a>
+                    </div>
+                    <h5>OKAY space</h5>
+                </div>
+
+                <div class="user active">
+                    <div class="userframe">
+                        <a href="#"><img src="chess.jpg"></a>
+                    </div>
+                    <div class="userCredentials">
+                        <h5>guest</h5>
+                        <div class="passwordContainer">
+                            <label for="pass">Type your password</label>
+                            <div class="inputPasswordContainer">
+                                <input type="password" id="pass" name="password"
+                                    minlength="8" required>
+                                <a href="#"><img src="icons/go.svg"></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+        <div class="divider-x"></div>
+        <div class="login-header">
+            <nav><img src="icons/off.svg">
+                <h5>Turn off computer</h5>
+            </nav>
+        </div>
+    </body>
 
 </html>
